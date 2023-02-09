@@ -1,0 +1,7 @@
+.game-list li {
+    @apply p-2 border-t border-l border-white flex items-center;
+}
+
+.game-list li:last-child {
+    @apply border-r;
+}
