@@ -1,8 +1,32 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import LeagueOfLegends from "./routes/LeagueOfLegends/LeagueOfLegends";
+import RiotAccount from "./routes/RiotAccount/RiotAccount";
+import leagueLogo from "./assets/LoLGold.svg";
+import { useState } from "react";
+
+export type GameTabs = {
+	Riot: JSX.Element,
+	League: JSX.Element,
+	Valorant: JSX.Element,
+	TFT: JSX.Element,
+	LoR: JSX.Element,
+	WildRift: JSX.Element
+}
+
+const tabs: GameTabs = {
+	Riot: <RiotAccount />,
+	League: <LeagueOfLegends />,
+	Valorant: <RiotAccount />,
+	TFT: <RiotAccount />,
+	LoR: <RiotAccount />,
+	WildRift: <RiotAccount />
+}
 
 function App() {
+	const [currTab, setCurrTab] = useState<JSX.Element>(tabs.Riot);
+
 	return (
 		<div className="max-w-4xl mx-auto space-y-4 py-4">
 			<Navbar />
@@ -15,16 +39,19 @@ function App() {
 			{/* Tabs */}
 			<div>
 				<ul className="flex game-list">
-					<li>Riot Account</li>
-					<li>League Of Legends</li>
-					<li>Valorant</li>
-					<li>Teamfight Tacticts</li>
-					<li>Legends Of Runeterra</li>
-					<li>LoL: Wild Rift</li>
+					<li onClick={() => { setCurrTab(tabs.Riot) }}>Riot Account</li>
+					{/* <li id="league">LoL</li> */}
+					<button></button>
+					<li id="league" onClick={() => { setCurrTab(tabs.League) }}>
+						<img src={leagueLogo} alt="League Of Legends Logo" />
+						<span className="block">League of Legends</span>
+					</li>
+					<li onClick={() => { setCurrTab(tabs.Valorant) }}>Valorant</li>
+					<li onClick={() => { setCurrTab(tabs.TFT) }}>Teamfight Tacticts</li>
+					<li onClick={() => { setCurrTab(tabs.LoR) }}>Legends Of Runeterra</li>
+					<li onClick={() => { setCurrTab(tabs.WildRift) }}>LoL: Wild Rift</li>
 				</ul>
-				<div className="border border-white py-4 px-8">
-					Content
-				</div>
+				{currTab}
 			</div>
 			<Footer />
 		</div>

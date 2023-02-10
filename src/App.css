@@ -1,7 +1,20 @@
 .game-list li {
-    @apply p-2 border-t border-l border-white flex items-center;
+    @apply flex whitespace-nowrap px-4 py-2 items-center space-x-2 border-t border-l border-white cursor-pointer;
+}
+
+.game-list li img {
+    @apply w-6;
 }
 
 .game-list li:last-child {
     @apply border-r;
+}
+
+.game-list #league {
+    @apply font-beaufortforlol font-bold duration-300;
+    background-color: #010A13;
+}
+
+.game-list #league:hover {
+    color: #C89B3C;
 }

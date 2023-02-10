@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Beaufort For LoL";
+  src: local("Beaufort For LoL"),
+    url("./fonts/BeaufortForLoL-TTF/BeaufortforLOL-Regular.ttf") format("truetype");
+    line-height: normal;
+}
+
+@font-face {
+  font-family: "Beaufort For LoL";
+  src: local("Beaufort For LoL"),
+    url("./fonts/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: bold;
+  line-height: normal;
+}
+
+@font-face {
+  font-family: "Spiegel";
+  src: local("Spiegel"),
+    url("./fonts/Spiegel-TTF/Spiegel_TT_Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Spiegel";
+  src: local("Spiegel"),
+    url("./fonts/Spiegel-TTF/Spiegel_TT_Bold.ttf") format("truetype");
+  font-weight: bold;
+  line-height: normal;
+}
+
 :root {
   @apply bg-slate-900;
   color: white;
