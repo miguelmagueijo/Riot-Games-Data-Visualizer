@@ -18,7 +18,7 @@ class LeagueOfLegends extends React.Component {
                 <div className="space-y-4">
                     <div>
                         <div className="font-bold text-2xl text-leagueGold4">Store Data</div>
-                        <div className="text-sm text-leagueGold1">Since 2014-09-02 you...</div>
+                        <div className="text-sm text-leagueGold1">Since 2009-10-27 you...</div>
                     </div>
                     <div className="grid grid-flow-col gap-4">
                         <div>
@@ -31,14 +31,14 @@ class LeagueOfLegends extends React.Component {
                         <div>
                             <div className="text-sm text-leagueGold1">Charged your account with</div>
                             <div>
-                                <span className="font-bold text-xl">00000</span>
+                                <span className="font-bold text-xl">1000</span>
                                 <span className="text-sm"> €</span>
                             </div>
                         </div>
                         <div>
                             <div className="text-sm text-leagueGold1">Bought</div>
                             <div>
-                                <span className="font-bold text-xl">814000</span>
+                                <span className="font-bold text-xl">1814000</span>
                                 <span className="text-sm"> RP</span>
                             </div>
                         </div>
