@@ -15,6 +15,6 @@
     background-color: #010A13;
 }
 
-.game-list #league:hover {
-    color: #C89B3C;
+.game-list #league.active {
+    @apply text-leagueGold4
 }
