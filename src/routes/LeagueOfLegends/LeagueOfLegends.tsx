@@ -8,7 +8,7 @@ class LeagueOfLegends extends React.Component {
                 <div className="flex justify-between items-center">
                     <div>
                         <div className="text-sm text-leagueGold4">Summoner name</div>
-                        <div className="font-bold text-2xl">Living Forge</div>
+                        <div className="font-bold text-2xl">Demo Summoner</div>
                     </div>
                     <div>
                         <div className="text-sm text-leagueGold4 text-right">Region</div>
